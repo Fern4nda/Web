@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulário</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Formulário para compra e entrega de roupas online</h1>
+
+        <form id="form1" name="form1" method="post" action="mailto: meuemail" enctype="text/plain"> 
+
+            <fieldset>
+
+                <legend>Dados Pessoais</legend>
+
+              <p> 
+                  <label for="nome">Nome:</label> 
+                  <input type="text" id="nome" name="nome" size="40" maxlength="60" autofocus="autofocus" placeholder="Digite seu nome completo" required="required"/>
+              </p> 
+              <p>
+                    <label for="email">E-mail:</label> 
+                    <input type="email" id="email" name="email" required="required"/>
+              </p> 
+
+              <p> 
+                 <label for="nasc">Data de Nascimento:</label>
+                 <input type="date" id="nasc" name="nasc" />
+             </p>
+
+               <p>
+                 <label for="endereço">Endereço:</label> 
+                 <input type="text" id="endereço" name="endereço" size="10" maxlength="70" required="required"  />
+             </p>  
+
+              <p>
+                 <label for="num">Número</label>
+                 <input type="number" id="num" name="num" min="0" max="10" step="2" />    
+              </p> 
+
+              <p>
+                 <label for="cep">CEP:</label> 
+                 <input type="number" id="cep" name="cep" size="8" maxlength="8"  required="required"  />
+              </p>  
+            
+              <p>
+                 <textarea id="referencia" name="referencia" maxlength="200" rows="4" cols="50">Referência para entrega...</textarea>
+              </p> 
+
+              <p>
+                 <label for="senha">Senha</label> 
+                 <input type="password" id="senha" name="senha" size="6" maxlength="8" required="required" />
+             </p>
+           </fieldset>
+
+
+
+
+              <fieldset>
+                 <legend>Informações sobre a peça</legend>
+              
+                  <p>
+                     <label for="pesquisa">Busca de produtos</label>
+                     <input type="search" id="pesquisa" name="pesquisa" />    
+                  </p>
+                
+                 <fieldset>  
+                        <legend>Selecione o Tamanho</legend>
+                         <p>
+                         <input type="radio" id="p" name="p" value="fun" required="required" disabled />
+                         <label for="p">P</label>
+                        </p>
+
+                        <p>
+                         <input type="radio" id="m" name="m" value="m" />
+                         <label for="m">M</label>
+                      </p>
+                        <p>
+                         <input type="radio" id="g" name="g" value="g" checked="checked" />
+                         <label for="g">G</label> 
+                     </p>
+                        <p>
+                         <input type="radio" id="gg" name="gg" value="gg" />
+                         <label for="gg">GG</label> 
+                      </p>
+                  
+                    </fieldset>
+               
+                    <p>
+                     <label for="cor">Selecione uma cor para a peça:</label>
+                     <select id="cor" name="cor" size="8" multiple>
+                        <option>Preto</option>
+                        <option>Branco</option>
+                        <option>Cinza</option>
+                        <option>Vermelho</option>
+                        <option>Verde</option>
+                        <option>Azul</option>
+                        <option>Rosa</option>
+                        <option>Lilás</option>
+                   </select> 
+                  </p> 
+              
+                </fieldset>   
+
+              
+           <fieldset>
+             <legend>Entrega</legend>
+            
+             <p>
+                <input type="checkbox" id="entrega1" name="entrega1" value="entrega1"  />
+                 <label for="entrega1">Entrega regular</label> 
+              </p>
+
+
+               <fieldset><legend>Entrega programada</legend>
+                    <p>
+                     <input type="checkbox" id="entrega2" name="entrega2" value="entrega2" />
+                     <label for="entrega2">Entrega programada</label> 
+                  </p>
+            
+                      <p>
+                         <input type="date" id="dia" name="dia" />
+                     </p>
+    
+                     <p>
+                         <label for="time">time</label>
+                         <input type="time" id="time" name="time" />    
+                     </p> 
+                </fieldset>
+           
+
+               <fieldset> <legend>Retirada na loja</legend>
+                     <p>
+                         <input type="checkbox" id="entrega3" name="entrega3" value="on"  />
+                         <label for="entrega3">Retirada na loja</label> 
+                     </p>
+    
+                    <p> 
+                      <select id="regiao" name="regiao" size="11" multiple>
+                             <option value="">Escolha uma loja para retirada: </option>
+                             <optgroup value="n"label="Região Norte">
+                             <option>Anhanguera</option>
+                             <option>Freguesia do Ó</option>
+                             </optgroup>
+                             <optgroup value="s"label="Região Sul">
+                             <option>Sacomã</option>
+                             <option>Vila Mariana</option>
+                             </optgroup>
+                             <optgroup value="l"label="Região Leste">
+                                <option>Mooca</option>
+                                <option>Penha</option>
+                             </optgroup>
+                             <optgroup value="o" label="Região Oeste"> 
+                                <option>Vila Madalena</option>
+                                <option>Vila Leopoldina</option>
+                             </optgroup>
+                        </select> 
+                  </p> 
+                </fieldset>
+           </fieldset>
+
+
+           <fieldset>
+             <legend>Avaliação de Produtos</legend>
+
+              <p>
+                 <label for="rang">Selecione seu nível de satisfação</label>
+                 <input type="range" id="rang" name="rang" />    
+              </p>
+             
+               <p>
+                 <textarea id="coment" name="coment" maxlength="200" rows="4" cols="50">Deixe sua avaliação...</textarea>
+              </p> 
+              <p>
+                <input type="file" />   
+              </p>
+
+           </fieldset>
+
+            <fieldset>
+               
+              <p>
+                  <input type="submit" value="Enviar" />
+                  <input type="reset" value="Limpar Dados" />  
+              </p>
+
+            </fieldset>
+       
+        </form>
+
+    </body>
+
+</html>
