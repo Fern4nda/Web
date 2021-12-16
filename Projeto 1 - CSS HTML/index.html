@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Blog da Fe - Moda feminina e Beleza</title>
+        <link rel="Stylesheet" href="style.css" media="screen"/>
+    </head>
+
+    <body>
+        <div class="container">  
+            <header class="header">
+
+             <div class="flex-container botoes1">
+             <div><input type="button" value="Acessibilidade"/></div>
+             <div><input type="button" value="Sustentabilidade"/></div>
+             <div><input type="button" value="Contato"/></div>  
+             <div><input type="button" value="Baixe o app"/></div> 
+             </div>
+
+             <div class="flex-container botoes2" style="float:right" >
+              <div><input type="button" value="Login"/></div>
+              <div><input type="button" value="Favoritos"/></div>
+              </div>
+
+            </header>
+             
+            <section class="logo">
+             <p>
+                  <h1>Blog da Fe</h1> 
+             </p>
+
+
+               <p>
+                  <div class="flex-container pesquisa">
+                     <input type="search" id="pesquisa" name="pesquisa" placeholder="O que está procurando?" />
+                  </div>
+               </p>
+            
+               <p>
+                  <div class="flex-container sumario">
+                  <nav>
+                     <ul>
+                         <li><a href="#secao">Beleza</a></li>
+                         <li><a href="#consulta">Moda</a></li>
+                         <li><a href="#promocao">Promoções</a></li>
+                         <li><a href="#noticia">Tendências</a></li>
+                         <li><a href="#video">Novidades</a></li>
+                     </ul>
+                 </nav>
+               </div>
+             </p>
+
+            </section>
+           
+          <section id="promocao">
+             <h2>Promoção</h2>
+             <h3>Confira as lojas com liquidações hoje!</h3>
+             <a href="https://br.shein.com/Women-Dresses-c-1727.html?ici=br_tab01navbar04menu01&scici=navbar_WomenHomePage~~tab01navbar04menu01~~4_1~~real_1727~~~~0&srctype=category&userpath=category%3EROUPAS%3EVESTIDOS">
+             <img src="C5.PNG" id="imgC1"></a>
+          </section>
+
+          <section id="noticia">
+
+            <h2>As principais tendências do verão 2022 que já estão em nosso radar!</h2>
+              <article>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam molestiae vitae quae consequatur eaque laboriosam
+                fuga accusamus suscipit. Consequuntur facilis id aliquam
+                nulla, aspernatur doloribus voluptatem distinctio. Enim,
+                omnis necessitatibus.</h3>
+              </article>
+              <a href="https://br.shein.com/style/Tank-Dress-sc-00150791.html?ici=br_tab01navbar05menu04dir09&scici=navbar_WomenHomePage~~tab01navbar05menu04dir09~~5_4_9~~itemPicking_00150791~~~~0&srctype=category&userpath=category%3EVESTIDOS%3EVestidos%20Regata">
+              <img src="img2.jpg" alt="" />
+              </a>
+          </section>
+
+          <section id="secao">
+             <h2 id="timg2">Confira nossa mais recente seção! Review de produtos de Beleza</h2>
+             <article>
+             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam molestiae vitae quae consequatur eaque laboriosam
+              fuga accusamus suscipit. Consequuntur facilis id aliquam
+              nulla, aspernatur doloribus voluptatem distinctio. Enim,
+              omnis necessitatibus.</h3>
+            </article>
+             <img src="img3.jpg" id="img2">
+          </section>
+
+          <section id="video">
+             <h2>Saint Laurent retorna à Semana de moda de Paris</h2>
+             <h3>Após anunciar que não participaria mais do calendário de desfiles, marca retoma os formatos de apresentação pré-pandemia.</h3>
+             <iframe 
+                  id="youtube" 
+                  width="760"  
+                  height="500" 
+                  src="https://www.youtube.com/embed/UfQaAhD6Vzg" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+             ></iframe>
+          </section>
+
+          <section id="consulta">
+            <h2>Paris Fashion Week 2021</h2>
+            <a id="link" href="https://claudia.abril.com.br/moda/paris-fashion-week-2021/">Confira mais noticias sobre que aconteceu no evento</a>
+          </section>
+
+
+          <section id="sugestao">
+            <div class="formulario">
+                <header class="form-head">
+                    <h2>Deixe aqui o que você quer ver no blog!</h2>
+                </header>
+                <form>
+                    <div class="name-form">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" required />
+                    </div>
+                    <div class="email-form">
+                        <label for="email">Email:</label>
+                        <input type="emai" required name="email" />
+                    </div>
+                    <div class="style-form">
+                        <h2>Qual desses mais te agrada?:</h2>
+                        <label>Moda</label>
+                        <input
+                            type="checkbox"
+                            id="moda"
+                            name="moda"
+                        />
+                        <label>Beleza</label
+                        ><input
+                            type="checkbox"
+                            id="beleza"
+                            name="beleza"
+                        />
+                        <label>Novidades</label
+                        ><input
+                            type="checkbox"
+                            id="nov"
+                            name="nov"
+                        />
+                        <label>Outro</label
+                        ><input
+                            type="checkbox"
+                            id="ILP508"
+                            name="ILP540"
+                        />
+                    </div>
+                    <div class="coment-form">
+                      <textarea id="coment" name="coment" maxlength="200" rows="4" cols="50">Deixe seu comentário...</textarea>
+                  </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+
+
+            <footer>
+              <div class="rodape">
+                  <p>Copyright &copy; 2021</p>
+              </div>
+            </footer>
+         </div>  
+    </body>
+</html>

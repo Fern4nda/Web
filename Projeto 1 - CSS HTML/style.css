@@ -1,0 +1,502 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout  */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'logo'
+        'promocao'
+        'noticia'
+        'secao'
+        'video'
+        'consulta'
+        'sugestao'
+        'footer';
+}
+
+ /* HEADER */
+ 
+.header {
+    grid-area: header;
+    display: grid;
+    background-color: black;
+    color: white;
+}
+
+.botoes1{     /* botoes de acessibilidade, atendimento, cartao da loja... */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000000;
+}
+.botoes1 input{     /* config botoes de acessibilidade, atendimento ... */
+    background-color: #000000;
+    color: #ffffff; 
+    border-radius: 5px;
+    border: #000000.2px solid;  
+    font-size: 1.2rem;  
+    font-style:normal;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.botoes2{     /* botoes de login, carrinho, favoritos */
+    display:flex;
+    flex-direction: row;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.botoes2 input{     /* config botoes de login ... */
+    color: #fdfdfd;
+    border-radius: 5px;
+    background-color: transparent;
+    border:transparent .2px solid; 
+    font-size: 1.3rem;  
+    padding: 10px; 
+    font-style:normal;
+    cursor: pointer;
+}
+
+/* area do logo da loja */
+
+.logo {
+    grid-area: logo;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    min-height: 90vh;
+    background: linear-gradient(rgba(0.6, 0.6, 0.7, 0.9), transparent),
+        url('d3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {     /* titulo com nome da loja */
+    font-size: 2.8rem;
+    font-style:unset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d07b97;
+    padding-bottom: 3%;
+}
+
+.pesquisa{
+    color: #767676;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.pesquisa input{
+    font-size: 1.4rem;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: #767676 1.2px solid;
+    width: 100%;
+    font-style:unset;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    min-height: 10vh;
+    padding: 2rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+ul{     /* sumario de novidades, promoçoes ... */
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; 
+    text-decoration: none; 
+}
+
+li{     /* config sumario de novidades, promoçoes ... */
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 7px;
+    font-size: 1.3rem;
+    color: #000000;
+    background-color: rgb(161, 112, 137);  
+    border-radius: 5px;
+    border: rgb(141, 96, 119).2px solid;
+    font-style:unset;
+    text-decoration: none;
+}
+
+
+/* area da foto de promoção */
+
+#promocao {
+    grid-area: promocao;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    color: rgb(255, 255, 255);
+    min-height: 90vh;
+    background: linear-gradient(rgba(0.1, 0.2, 0.2, 0.3), transparent);
+    background-color: #ffe5f4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2{            /* legenda, promoçao de primavera */
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#imgC1{            /* primeira imagem, promoçao de primavera */
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+/* area de noticia */
+
+#noticia {
+    grid-area: noticia;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    color: rgb(255, 255, 255);
+    min-height: 90vh;
+    background: linear-gradient(rgba(0.2, 0.3, 0.4, 0.5), transparent),
+        url('b2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#noticia img{
+    padding-bottom: 3%;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*  imagem2 seções Beleza  */
+
+#secao {
+    grid-area: secao;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    color: rgb(255, 255, 255);
+    min-height: 90vh;
+    background: linear-gradient(rgba(0.1, 0.2, 0.3, 0.4), transparent);
+    background-color: #ffe5f4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-container img {            
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    padding: 0.5rem;
+    height: auto;
+    overflow: hidden; 
+    background-color: transparent;
+}
+
+#timg2{            /* legenda, conferir seção */
+    font-size: 1.7rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 3%;
+    font-style:unset;
+    background-color: transparent;
+}
+
+#img2{            /* segunda imagem, conferir seção */
+    padding-left: 3%;
+    padding-right: 3%; 
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+/* video */
+
+.frame{
+    margin: 2rem 0;
+    width: max-content;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+}
+#video {
+    grid-area: video;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    color: rgb(255, 255, 255);
+    min-height: 90vh;
+    background: linear-gradient(rgba(0.2, 0.3, 0.4, 0.5), transparent),
+        url('b8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* LINK / consulta */
+
+#link {
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+#consulta {
+    grid-area: consulta;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    color: rgb(255, 255, 255);
+    min-height: 50vh;
+    background: linear-gradient(rgba(0.1, 0.2, 0.3, 0.4), transparent);
+    background-color: #ffe5f4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* FORMULARIO */
+
+#sugestao {
+    grid-area: sugestao;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    min-height: 50vh;
+    background: linear-gradient(rgba(0.2, 0.3, 0.4, 0.5), transparent),
+        url('b7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formulario {
+    background: rgba(94, 67, 90, 0.8);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name-form,
+.email-form,
+.style-form {
+    padding: 3rem;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.coment-form{
+    padding-top: 2%;
+    padding: 3rem;
+    text-align: center;
+}
+
+.coment-form, textarea{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.formulario label {
+    margin: 0rem 3rem;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(161, 112, 137);
+}
+
+.formulario input {
+    padding: 1rem 3rem;
+    
+}
+.style-form input {
+    padding: 1rem 3rem;
+}
+
+
+/* Footer */
+footer {
+    
+    grid-area: footer;
+    background: black;
+    color: white;
+}
+
+.rodape {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+/* MOBILE FIRST! - uma grid-area por linha. */
+
+@media screen and (max-width:500px) {           
+    .container {
+        display: grid;
+        grid-template-areas:
+        'header'
+        'logo'
+        'promocao'
+        'noticia'
+        'secao'
+        'video'
+        'consulta'
+        'sugestao'
+        'footer';
+    }
+}                              
+
+/* PARA MEDIA QUERIE A PARTIR DE 500PX - Reorganização das grid-areas. */
+
+@media screen and (min-width: 500px) {    
+    .container {
+        display: grid;
+        grid-template-areas:
+        'header'
+        'logo'
+        'promocao'
+        'noticia'
+        'secao'
+        'video'
+        'consulta'
+        'sugestao'
+        'footer';
+    }
+ }
+
+/* PARA MEDIA QUERIE A PARTIR DE 750PX... */
+
+@media screen and (min-width:750px) {
+     .container {
+        display: grid;
+        grid-template-areas:
+        'header'
+        'logo'
+        'promocao'
+        'noticia'
+        'secao'
+        'video'
+        'consulta'
+        'sugestao'
+        'footer';
+    }
+ }
+
+
+/* PARA MEDIA QUERIE A PARTIR DE 1000PX. */
+
+@media screen and (min-width:1000px) {
+     .container {
+        display: grid;
+        grid-template-areas:
+        'header'
+        'logo'
+        'promocao'
+        'noticia'
+        'secao'
+        'video'
+        'consulta'
+        'sugestao'
+        'footer';
+    }
+ }
