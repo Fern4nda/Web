@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Cálculo de média aritmética</title>
+    </head>
+    <body>
+        <h1>Avaliação 03 - JavaScript</h1>
+        <form>
+            <h3>Cálculo de Média</h3>
+            <div class="inputs">
+                <label>Nota 1: </label>
+                <input type="number" for="nota1" id="nota1" />
+            </div>
+            <div class="inputs">
+                <label>Nota 2: </label>
+                <input type="number" for="nota2" id="nota2" />
+            </div>
+            <div class="botoes">
+                <button type="submit" id="calcular">Calcular</button>
+                <button type="submit" id="limpar">Limpar</button>
+            </div>
+
+            <div class="resultado">
+                <table>
+                    <th>Média</th>
+                    <th>Conceito</th>
+                    <tbody>
+                        <td id="media"></td>
+                        <td id="conceito"></td>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>

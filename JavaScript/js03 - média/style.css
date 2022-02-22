@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+
+body {
+    margin: 2rem;
+    font-family: sans-serif;
+    background-color: bisque;
+    background: linear-gradient(rgba(0.6, 0.6, 0.7, 0.9), transparent),
+        
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+form .inputs,
+form .botoes,
+form .resultado {
+
+    padding: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+html{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.inputs input {
+    padding: 0.5rem;
+}
+
+.botoes button {
+    padding: 1rem;
+    cursor: pointer;
+    border: 0;
+    background: rgb(65, 180, 175);
+    color: rgb(12, 57, 65);
+    font-weight: bolder;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.resultado th {
+    padding: 0 1rem;
+}
