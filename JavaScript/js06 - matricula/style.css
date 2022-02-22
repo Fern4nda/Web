@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background:linear-gradient(rgba(200, 199, 198, 198), transparent) ,
+    url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+    height: 80%;
+}
+
+form div {
+    padding: 1rem;
+    width: 50%;
+}
+
+form div input {
+    padding: 0.7rem;
+    width: 100%;
+}
+
+form input[type='submit'] {
+    margin: 0.5rem;
+    padding: 0.8rem;
+    width: 25%;
+    background-color: rgba(60, 155, 233, 0.473);
+    border: solid 1px;
+    border-radius: 0.2rem;
+    font-size: large;
+}
+form input[type='submit']:hover {
+    background-color: rgba(41, 99, 175, 0.815);
+}
+
+.cadastrados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+@media (max-width: 800px) {
+    form div {
+        padding: 1rem;
+        width: 100%;
+    }
+}
