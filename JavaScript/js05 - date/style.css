@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(138, 245, 245);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+p {
+    padding: 1rem;
+}
+
+h2 {
+    padding: 2rem;
+}
